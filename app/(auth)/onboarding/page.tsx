@@ -5,12 +5,12 @@ async function Page() {
   const user = await currentUser();
 
   const userData = {
-    id: user?.id,
+    id: user?.id || "",
     objectId: "",
-    username: user?.username,
+    username: user?.username || "",
     name: user?.firstName || "",
     bio: "",
-    image: user?.imageUrl,
+    image: user?.imageUrl || "",
   };
 
   return (
