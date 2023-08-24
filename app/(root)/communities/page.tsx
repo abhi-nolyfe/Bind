@@ -1,8 +1,8 @@
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
-// import Searchbar from "@/components/shared/Searchbar";
-// import Pagination from "@/components/shared/Pagination";
+import Searchbar from "@/components/shared/Searchbar";
+import Pagination from "@/components/shared/Pagination";
 import CommunityCard from "@/components/cards/CommunityCard";
 
 import { fetchUser } from "@/lib/actions/user.actions";
@@ -30,7 +30,7 @@ async function Page({
       <h1 className="head-text">Communities</h1>
 
       <div className="mt-5">
-        {/* <Searchbar routeType="communities" /> */}
+        <Searchbar routeType="communities" />
       </div>
 
       <section className="mt-9 flex flex-wrap gap-4">
@@ -53,11 +53,11 @@ async function Page({
         )}
       </section>
 
-      {/* <Pagination
+      <Pagination
         path="communities"
         pageNumber={searchParams?.page ? +searchParams.page : 1}
         isNext={result.isNext}
-      /> */}
+      />
     </>
   );
 }
