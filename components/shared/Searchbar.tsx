@@ -26,7 +26,6 @@ function Searchbar({ routeType }: Props) {
 
     return () => clearTimeout(delayDebounceFn);
   }, [search, routeType]);
-  console.log("routetype:", routeType);
 
   return (
     <div className="searchbar">
