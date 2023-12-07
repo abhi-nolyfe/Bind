@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.23.2",
@@ -36,5 +37,8 @@
     "typescript": "5.1.6",
     "uploadthing": "^5.3.1",
     "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.1"
   }
 }
