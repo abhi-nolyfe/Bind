@@ -125,7 +125,9 @@ export const POST = async (request: Request) => {
 
       // @ts-ignore
       await addMemberToCommunity(
+        // @ts-ignore
         organization.id,
+        // @ts-ignore
         public_user_data.user_id
       );
 
@@ -153,7 +155,9 @@ export const POST = async (request: Request) => {
 
       // @ts-ignore
       await removeUserFromCommunity(
+        // @ts-ignore
         public_user_data.user_id,
+        // @ts-ignore
         organization.id
       );
 
